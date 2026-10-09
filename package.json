@@ -1,0 +1,30 @@
+{
+  "name": "industrial-catalunya-v0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "npm run build && npm start",
+    "typecheck": "tsc",
+    "test": "node scripts/unit-tests.mjs",
+    "test:e2e": "node scripts/e2e.mjs",
+    "lint": "node scripts/lint.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.63.0",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "type": "module"
+}

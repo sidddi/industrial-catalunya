@@ -1,0 +1,338 @@
+[
+  {
+    "programId": "31115",
+    "admissionYear": 2026,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 14, codi 31115, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31115",
+    "admissionYear": 2026,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 14, codi 31115, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31114",
+    "admissionYear": 2026,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 14, codi 31114, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31114",
+    "admissionYear": 2026,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 14, codi 31114, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81088",
+    "admissionYear": 2026,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 14, codi 81088, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81088",
+    "admissionYear": 2026,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 14, codi 81088, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31027",
+    "admissionYear": 2026,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 31027, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31027",
+    "admissionYear": 2026,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 31027, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81022",
+    "admissionYear": 2026,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 81022, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81022",
+    "admissionYear": 2026,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 81022, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "71040",
+    "admissionYear": 2026,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 71040, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "71040",
+    "admissionYear": 2026,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2026_v7.pdf",
+      "sourceTitle": "Ponderacions-2026_v7.pdf",
+      "sourceId": "weights-2026",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 71040, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31115",
+    "admissionYear": 2027,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 31115, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31115",
+    "admissionYear": 2027,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 31115, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31114",
+    "admissionYear": 2027,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 31114, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31114",
+    "admissionYear": 2027,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 31114, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81088",
+    "admissionYear": 2027,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 81088, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81088",
+    "admissionYear": 2027,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 15, codi 81088, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31027",
+    "admissionYear": 2027,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 31027, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "31027",
+    "admissionYear": 2027,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 31027, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81022",
+    "admissionYear": 2027,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 81022, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "81022",
+    "admissionYear": 2027,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 81022, columna Física",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "71040",
+    "admissionYear": 2027,
+    "subjectId": "math",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 71040, columna Matemàtiques",
+      "status": "verified"
+    }
+  },
+  {
+    "programId": "71040",
+    "admissionYear": 2027,
+    "subjectId": "physics",
+    "coefficient": 0.2,
+    "provenance": {
+      "sourceUrl": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+      "sourceTitle": "Ponderacions-2027_v2.pdf",
+      "sourceId": "weights-2027",
+      "verifiedAt": "2026-10-07",
+      "pageOrRow": "p. 16, codi 71040, columna Física",
+      "status": "verified"
+    }
+  }
+]
