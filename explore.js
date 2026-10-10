@@ -15,24 +15,24 @@ const FAMILIES = [
 ];
 function familiesFor(x) {const n=norm(x.n);const f=FAMILIES.filter(f=>f.id!=='open'&&f.re.test(n));return f.length?f:[FAMILIES.at(-1)];}
 function isCombined(x){return /simultane|agrupacio|\s\/\s/.test(norm(x.n));}
-function canExplore(x){return !!x.w && !x.revisio && x.t['2026']!==undefined;}
+function canExplore(x){return x.t['2026']!==undefined;}
 function renderExplore(a){
  const branch=$('branch').value, selected=$('family').value, u=$('uni').value,m=$('mun').value;
- const valid=a!==null&&a>=5; const all=D.ofertes.filter(x=>canExplore(x)&&(!u||x.u===u)&&(!m||x.m.split('/').includes(m)));
- const fits=valid?all.filter(x=>admissio(a,x).n>=x.t['2026']):[];
+ const valid=a!==null&&a>=5; const all=D.ofertes.filter(x=>canExplore(x)&&locationMatches(x)&&pathMatches(x)&&(!u||x.u===u)&&(!m||x.m.split('/').includes(m)));
+ const gradeFilter=$('explore-fit').checked;const fits=gradeFilter&&valid?all.filter(x=>{const r=admissio(a,x);return r&&r.n>=x.t['2026']}):all;
  const groups=FAMILIES.filter(f=>!selected||f.id===selected).map(f=>({...f,items:fits.filter(x=>familiesFor(x).includes(f))}));
  groups.sort((a,b)=>Number(b.branches.includes(branch))-Number(a.branches.includes(branch)));
  $('res').textContent=valid?`${fits.length} opcions de grau i centre amb nota suficient segons el tall de 2026. Un grau pot aparèixer en més d’una família.`:'Posa la teva nota d’accés per descobrir opcions. Si tens notes de matèries específiques, afegeix-les: poden obrir més portes.';
- if(!valid){$('llista').innerHTML=`<div class="empty"><span class="empty-icon">↗</span><h3>On et pot portar la teva nota?</h3><p>Primer les notes. Després, mira les famílies i obre les que et cridin l’atenció.</p><p class="small">La branca de batxillerat només ordena els àmbits. No tanca cap porta.</p></div>`;return;}
+ if(gradeFilter&&!valid){$('llista').innerHTML=`<div class="empty"><span class="empty-icon">↗</span><h3>On et pot portar la teva nota?</h3><p>Posa les notes per activar aquest filtre, o descobreix els graus sense nota.</p><p class="small">La branca de batxillerat només ordena els àmbits. No tanca cap porta.</p><button type="button" class="family-more" id="without-grade">Veure més opcions sense nota</button></div>`;$('without-grade').onclick=()=>{$('explore-fit').checked=false;render()};return;}
  if(!fits.length){$('llista').innerHTML='<div class="empty"><h3>No hi ha coincidències amb aquests filtres</h3><p>Prova un altre municipi o afegeix les notes de la fase específica. No canviïs les notes per encaixar-hi: el resultat és orientatiu.</p></div>';return;}
  const visible=groups.filter(g=>g.items.length);
  if(!visible.length){$('res').textContent='Cap opció en aquesta família amb aquests filtres.';$('llista').innerHTML='<div class="empty"><h3>No hi ha coincidències en aquesta família</h3><p>Tria totes les famílies, un altre municipi o afegeix les notes de la fase específica.</p></div>';return;}
  const count=new Set(visible.flatMap(g=>g.items.map(x=>x.c))).size;
- $('res').textContent=`${count} opcions de grau i centre amb nota suficient segons el tall de 2026. Un grau pot aparèixer en més d’una família.`;
- $('llista').innerHTML=`<div class="explore-summary"><strong>No cal que sàpigues el nom del grau.</strong><span>Obre una família i descobreix què hi ha. Comparem només notes amb el tall de 2026. No garantim plaça ni comprovem altres requisits, com les PAP o les vies d’accés específiques.</span></div>`+visible.map((g,k)=>{
+ $('res').textContent=`${count} opcions de grau i centre${gradeFilter?' amb nota suficient':' per descobrir'}. Notes de tall de 2026; no són una garantia d’admissió.`;
+ $('llista').innerHTML=`<div class="explore-summary"><strong>No cal que sàpigues el nom del grau.</strong><span>Obre una família i descobreix què hi ha. Descobreix què estudiaràs, les sortides i el cost. Si poses les notes, les comparem amb el tall de 2026. No garantim plaça ni comprovem altres requisits, com les PAP o les vies d’accés específiques.</span></div>`+visible.map((g,k)=>{
   g.items.sort((x,y)=>Number(isCombined(y))-Number(isCombined(x))||x.n.localeCompare(y.n,'ca')||x.m.localeCompare(y.m,'ca'));
   const related=branch&&g.branches.includes(branch);
   return `<details class="family-group" ${k===0||selected?'open':''}><summary><span class="family-icon" aria-hidden="true">${g.icon}</span><span class="family-heading"><strong>${g.name}</strong><span>${g.items.length} opcions${related?' · Afí al teu batxillerat':''}</span></span><span class="chevron" aria-hidden="true">⌄</span></summary><div class="family-body"><p class="family-hint">${g.hint}</p><div class="family-degrees">${g.items.map((x,i)=>`<div ${i>=4?'hidden':''} class="explore-degree">${degreeCard(x,a).replace(/ id="grau-[^"]+"/,'')}</div>`).join('')}</div>${g.items.length>4?`<button class="family-more" type="button">Veure les ${g.items.length} opcions</button>`:''}</div></details>`;
  }).join('');
  $('llista').querySelectorAll('.family-more').forEach(b=>b.onclick=()=>{b.parentElement.querySelectorAll('.explore-degree').forEach(e=>e.hidden=false);b.remove();});
-}
+    }
