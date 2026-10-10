@@ -17,6 +17,13 @@ for o in out:
     a=alies.get(o['c'])
     if a and o['c'] not in mat:
         q=byc[a['pdf']]; mat[o['c']]=({'vals':q['pond']},3,1); o['q']=a['nivell']
+revisio=json.load(open('data/revisio-2027.json'))['ofertes']
+for o in out:
+    if o['c'] in revisio:
+        o['revisio']=revisio[o['c']]
+        # Historical offers stay separate from current successors. No invented 2027 weights.
+        mat.pop(o['c'],None)
+        o.pop('q',None)
 miss=[o for o in out if o['c'] not in mat]
 mats=sorted({s for q in P for s in q['vals']})
 for o in out:
