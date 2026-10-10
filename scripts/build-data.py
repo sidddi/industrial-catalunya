@@ -11,6 +11,13 @@ for r in rows:
 out=sorted(off.values(),key=lambda o:(o['n'].lower(),o['u']))
 P=[{'vals':q['pond'],'name':q['nom'],'uni':q['uni']} for q in json.load(open('data/ponderacions-2027.json'))]
 mat,miss=build(P,out)
+byc={q['codi']:q for q in json.load(open('data/ponderacions-2027.json'))}
+alies=json.load(open('data/alies.json'))
+for o in out:
+    a=alies.get(o['c'])
+    if a and o['c'] not in mat:
+        q=byc[a['pdf']]; mat[o['c']]=({'vals':q['pond']},3,1); o['q']=a['nivell']
+miss=[o for o in out if o['c'] not in mat]
 mats=sorted({s for q in P for s in q['vals']})
 for o in out:
     if o['c'] in mat: o['w']={mats.index(s):v for s,v in mat[o['c']][0]['vals'].items()}
