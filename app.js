@@ -41,13 +41,13 @@ function render(){const a=acces();$('bn').textContent=a===null?'–':f(a);
   +(L.length>state.max?`<button class="mes" id="mes">Mostra'n més</button>`:'');
  $('llista').querySelectorAll('[data-successor]').forEach(el=>el.onclick=ev=>{ev.preventDefault();const target=D.ofertes.find(z=>z.c===el.dataset.successor);$('q').value=target.n;$('uni').value=target.u;$('mun').value='';$('nomes').checked=false;state.max=50;render();$('llista').scrollIntoView({behavior:'smooth'});});
  const b=$('mes');if(b)b.onclick=()=>{state.max+=50;render()}}
-fetch('data.json').then(r=>r.json()).then(d=>{D=d;
+fetch('data.json').then(r=>r.json()).then(d=>{D=d;discoveryInit();
  const us=[...new Set(d.ofertes.map(x=>x.u))].sort(),ms=[...new Set(d.ofertes.flatMap(x=>x.m.split('/')))].sort((a,b)=>a.localeCompare(b,'ca'));
  $('uni').innerHTML+=us.map(x=>`<option value="${x}">${UNI[x]||x}</option>`).join('');$('mun').innerHTML+=ms.map(x=>`<option>${x}</option>`).join('');
  ['batx','pau','access-direct','branch','all-paths','province','explore-fit','family','q','uni','mun','ord','nomes'].forEach(i=>$(i).addEventListener('input',()=>{state.max=50;render()}));
- $('family').innerHTML+=FAMILIES.map(f=>`<option value="${f.id}">${f.name}</option>`).join('');
+
  $('branch').addEventListener('input',()=>{drawMats();renderSubjectGuide();});$('all-subjects').addEventListener('input',()=>{drawMats();renderSubjectGuide();});
- const mode=which=>{state.mode=which;$('grade-panel').open=which==='search';$('mode-search').setAttribute('aria-pressed',which==='search');$('mode-explore').setAttribute('aria-pressed',which==='explore');$('search-controls').hidden=which!=='search';$('explore-controls').hidden=which!=='explore';$('only-control').hidden=which!=='search';$('sort-control').hidden=which!=='search';$('explore-grade-control').hidden=which!=='explore';render();};
+ const mode=which=>{state.mode=which;document.body.dataset.mode=which;$('grade-panel').open=which==='search';$('mode-search').setAttribute('aria-pressed',which==='search');$('mode-explore').setAttribute('aria-pressed',which==='explore');$('search-controls').hidden=which!=='search';$('explore-controls').hidden=which!=='explore';$('only-control').hidden=which!=='search';$('sort-control').hidden=which!=='search';$('explore-grade-control').hidden=which!=='explore';render();};
  $('mode-search').onclick=()=>mode('search');$('mode-explore').onclick=()=>mode('explore');
  document.querySelectorAll('[name="grade-method"]').forEach(el=>el.onchange=()=>{state.method=el.value;$('direct-grade').hidden=el.value!=='direct';$('calc-grade').hidden=el.value!=='calc';render();});
  $('addm').onclick=()=>{state.mats.push({i:'',g:''});drawMats()};drawMats();renderSubjectGuide();mode('explore')}).catch(()=>{$('res').textContent='Impossible carregar les dades. Torna a carregar la pàgina.';});
