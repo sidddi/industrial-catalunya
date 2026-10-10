@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notes de tall a Catalunya · Quins graus puc cursar?</title>
+<meta name="description" content="Escriu la teva nota d'admissió i descobreix a quins graus de les universitats catalanes hauries entrat els últims anys.">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="banner" class="banner"><span>La teva nota d'admissió</span><strong id="bn">–</strong><small id="bn2">/ 14</small></div>
+<header><h1>Notes de tall a Catalunya</h1><p class="lead">Escriu les teves notes i mira a quins graus de les universitats catalanes hauries entrat els últims anys.</p></header>
+<main>
+<section class="card"><h2>1. La teva nota</h2>
+<label>Nota de batxillerat (0-10)<input id="batx" inputmode="decimal" placeholder="Ex. 8,5"></label>
+<label>Nota de la fase general de la PAU (0-10)<input id="pau" inputmode="decimal" placeholder="Ex. 7,8"></label>
+<p class="small">Nota d'accés = 60% batxillerat + 40% fase general: <strong id="acc">–</strong></p>
+<label>Punts de la fase específica (0-4)<input id="esp" inputmode="decimal" placeholder="Ex. 1,6"></label>
+<p class="small">Són els punts que sumen les teves millors matèries ponderades. Si no ho saps, deixa-ho a 0: veuràs una nota mínima.</p>
+<p id="err" class="err" role="alert"></p>
+<p class="small">Nota d'admissió = nota d'accés + punts específica (màxim 14).</p></section>
+<section class="card"><h2>2. Cerca el teu grau</h2>
+<label>Nom del grau<input id="q" type="search" placeholder="Ex. Medicina, Psicologia, Informàtica..."></label>
+<div class="row"><label>Universitat<select id="uni"><option value="">Totes</option></select></label>
+<label>Municipi<select id="mun"><option value="">Tots</option></select></label>
+<label>Ordena per<select id="ord"><option value="n">Nom</option><option value="d">Nota de tall (de més alta a més baixa)</option><option value="a">Nota de tall (de més baixa a més alta)</option></select></label></div>
+<label class="chk"><input type="checkbox" id="nomes"> Mostra només els graus on hauria entrat</label></section>
+<section><p id="res" class="small"></p><div id="llista"></div></section>
+</main>
+<footer><p class="small">Font: <a href="https://analisi.transparenciacatalunya.cat/Educaci-/Notes-de-tall-d-acc-s-als-estudis-universitaris-co/usyn-hngc">Dades obertes de la Generalitat de Catalunya</a>, nota de tall de la 1a assignació (convocatòria de juny). Els valors de 5 vol dir que van entrar tots els sol·licitants. La nota de tall canvia cada any i igualar-la no assegura plaça. Els graus només amb places per accés per PAU/CFGS; no inclou màsters. Eina independent, no és oficial.</p></footer>
+<script src="app.js"></script></body></html>
