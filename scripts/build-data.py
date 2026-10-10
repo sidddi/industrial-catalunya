@@ -28,5 +28,9 @@ miss=[o for o in out if o['c'] not in mat]
 mats=sorted({s for q in P for s in q['vals']})
 for o in out:
     if o['c'] in mat: o['w']={mats.index(s):v for s,v in mat[o['c']][0]['vals'].items()}
-json.dump({'font':'Dades obertes de Catalunya (notes de tall 1a assignació 2023-2026) i Canal Universitats (ponderacions 2027)','anys':sorted({a for o in out for a in o['t']}),'materies':mats,'ofertes':out},open('data.json','w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
+fitxes=json.load(open('data/fitxes.json'))['ofertes']
+provincies=json.load(open('data/provincies.json'))
+for o in out:
+    if o['c'] in fitxes: o['info']=fitxes[o['c']]
+json.dump({'font':'Dades obertes de Catalunya (notes de tall 1a assignació 2023-2026) i Canal Universitats (ponderacions 2027)','anys':sorted({a for o in out for a in o['t']}),'materies':mats,'provincies':provincies,'ofertes':out},open('data.json','w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
 print(len(out),'ofertes;',len(mat),'amb ponderació;',len(miss),'sense')
