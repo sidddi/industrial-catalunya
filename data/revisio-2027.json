@@ -1,0 +1,119 @@
+{
+  "data_verificacio": "2026-10-10",
+  "font_ponderacions": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Ponderacions-2027_v2.pdf",
+  "ofertes": {
+    "1584": {
+      "estat": "no_verificat",
+      "nota": "Oferta històrica (darrera nota: 2025). La UB descriu una preinscripció específica, però no s'ha trobat una ponderació 2027 pròpia. No s'apliquen les ponderacions dels graus components sense confirmació oficial.",
+      "fonts": [
+        "https://mat.ub.edu/graumatesade/"
+      ]
+    },
+    "841": {
+      "estat": "sense_nou_acces",
+      "nota": "Pla en extinció, sense nou ingrés. La UPF indica Ciències Biomèdiques com a nou estudi. No es calcula l'admissió 2027 del pla antic.",
+      "fonts": [
+        "https://www.upf.edu/web/universitat/grau-en-biologia-humana"
+      ],
+      "successor": "5233"
+    },
+    "4477": {
+      "estat": "sense_nou_acces",
+      "nota": "Sense noves places des de 2025-2026. Substituït per Gestió i Digitalització en l'Esport. No es calcula l'admissió 2027 del grau antic.",
+      "fonts": [
+        "https://www.euncet.com/ca/graus-anteriors/ciencies-i-tecnologies-aplicades-a-esport-i-al-fitnes/"
+      ],
+      "successor": "5278"
+    },
+    "1069": {
+      "estat": "pla_renovat",
+      "nota": "Oferta històrica amb el nom anterior. La UB ha renovat el pla de Ciència Política i de l'Administració per al curs 2026-2027. Consulta la fitxa nova, amb les seves ponderacions 2027.",
+      "fonts": [
+        "https://web.ub.edu/ca/web/actualitat/w/oferta-academica-salo-ensenyament-2026"
+      ],
+      "successor": "5325"
+    },
+    "1582": {
+      "estat": "pla_renovat",
+      "nota": "Oferta històrica del doble itinerari. La UB confirma un nou itinerari Dret-Ciència Política per al curs 2026-2027. Consulta la fitxa nova, amb la fila pròpia 11120 del PDF 2027.",
+      "fonts": [
+        "https://web.ub.edu/documents/d/facultat-dret/d-cpa-assigdef-26-27-pdf"
+      ],
+      "successor": "5395"
+    },
+    "4493": {
+      "estat": "sense_nou_acces",
+      "nota": "La UB indica que 2024-2025 va ser el darrer curs d'inici de Dret-Criminologia. L'itinerari està en extinció des de 2025-2026. No es calcula l'admissió 2027.",
+      "fonts": [
+        "https://web.ub.edu/ca/web/facultat-dret/w/infograu-grau-g1120"
+      ]
+    },
+    "2276": {
+      "estat": "sense_nou_acces",
+      "nota": "La UB indica que 2024-2025 va ser el darrer curs d'inici de Dret-GAP. L'itinerari està en extinció des de 2025-2026. No es calcula l'admissió 2027.",
+      "fonts": [
+        "https://web.ub.edu/ca/web/facultat-dret/w/infograu-grau-g1119"
+      ]
+    },
+    "4494": {
+      "estat": "sense_nou_acces",
+      "nota": "La UB indica que 2024-2025 va ser el darrer curs d'inici de Dret-Relacions Laborals. L'itinerari està en extinció des de 2025-2026. No es calcula l'admissió 2027.",
+      "fonts": [
+        "https://web.ub.edu/ca/web/facultat-dret/w/infograu-grau-g1118"
+      ]
+    },
+    "5272": {
+      "estat": "no_verificat",
+      "nota": "Grau interuniversitari Elisava-CETT amb accés per preinscripció. No s'ha trobat una taula oficial de ponderacions 2027 per a aquesta oferta. Això no vol dir que només compti la nota d'accés. Cal confirmar-ho amb el centre.",
+      "fonts": [
+        "https://www.elisava.net/ca/graus/grau-disseny-sistema-alimentari/",
+        "https://uvic-ucc.cat/grau/disseny-per-als-sistemes-alimentaris"
+      ]
+    },
+    "4700": {
+      "estat": "sense_nou_acces",
+      "nota": "La UAB confirma que des de 2026-2027 no s'ofereixen places de nou accés. No es calcula l'admissió 2027.",
+      "fonts": [
+        "https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/estudis-d-espanyol-i-xines-llengua-literatura-i-cultura-1216708251447.html?param1=1345806163831"
+      ]
+    },
+    "992": {
+      "estat": "pla_renovat",
+      "nota": "Oferta històrica de Sant Pol. El centre identifica el grau antic en extinció; l'oferta renovada és Direcció d'Empreses Hoteleres i Gastronòmiques. Consulta la fitxa nova, sense traslladar-ne les ponderacions al grau antic.",
+      "fonts": [
+        "https://www.santpol.edu.es/ca/grau-universitari-en-extincio/",
+        "https://www.udg.edu/en/estudia/Oferta-formativa/Graus/Fitxes?ID=3153G0224&IDE=2508"
+      ],
+      "successor": "5168"
+    },
+    "2309": {
+      "estat": "pla_renovat",
+      "nota": "La UAB remet a Humanitats i Gestió de la Cultura com a nova versió des de 2026-2027. Consulta la fitxa nova, amb les ponderacions 2027 pròpies.",
+      "fonts": [
+        "https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/humanitats-1216708251447.html?param1=1216188717216"
+      ],
+      "successor": "5355"
+    },
+    "5014": {
+      "estat": "sense_nou_acces",
+      "nota": "Sense noves places a Màrqueting i Comunicació Digital des de 2024-2025. Substituït per Màrqueting, Innovació i Tecnologia; la seu del grau nou no es dedueix de l'antic Campus Can Dragó.",
+      "fonts": [
+        "https://www.euncet.com/ca/graus-anteriors/grau-marqueting-comunicacio/"
+      ]
+    },
+    "1093": {
+      "estat": "sense_nou_acces",
+      "nota": "La UAB elimina l'alemany com a idioma d'accés des de 2026-2027. El grau continua amb accés en anglès o francès; l'alemany es manté com a segon idioma. No es calcula l'admissió d'aquesta oferta antiga.",
+      "fonts": [
+        "https://www.uab.cat/doc/DOC_26_27_Proposta_Modificacio_GTI"
+      ]
+    },
+    "990": {
+      "estat": "sense_nou_acces",
+      "nota": "Formatic confirma l'extinció del grau en Turisme i la revocació de l'adscripció a la UdG (Resolució REU/4820/2025). Només es conserven les notes històriques.",
+      "fonts": [
+        "https://www.formaticbarcelona.com/estudiar/turisme/"
+      ]
+    }
+  }
+}
